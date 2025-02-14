@@ -1,0 +1,29 @@
+{
+    "MetricAlarms": [
+        {
+            "AlarmName": "hyoka-admin-lambdalogs-ActionRenkeiKeyDeleteBuild-maxmemoryused-high",
+            "AlarmArn": "arn:aws:cloudwatch:ap-northeast-1:505982390831:alarm:hyoka-admin-lambdalogs-ActionRenkeiKeyDeleteBuild-maxmemoryused-high",
+            "AlarmConfigurationUpdatedTimestamp": "2023-04-25T11:46:01.677000+00:00",
+            "ActionsEnabled": true,
+            "OKActions": [],
+            "AlarmActions": [
+                "arn:aws:sns:ap-northeast-1:505982390831:hyoka-admin-sns-topic"
+            ],
+            "InsufficientDataActions": [],
+            "StateValue": "INSUFFICIENT_DATA",
+            "StateReason": "Unchecked: Initial alarm creation",
+            "StateUpdatedTimestamp": "2023-04-25T11:46:01.677000+00:00",
+            "MetricName": "ActionRenkeiKeyDeleteBuild/MaxMemoryUsed",
+            "Namespace": "LambdaLogMetrics",
+            "Statistic": "Sum",
+            "Dimensions": [],
+            "Period": 60,
+            "EvaluationPeriods": 15,
+            "DatapointsToAlarm": 15,
+            "Threshold": 256.0,
+            "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+            "TreatMissingData": "missing"
+        }
+    ],
+    "CompositeAlarms": []
+}
